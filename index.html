@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+	<title>Desafio HTML CSS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+    <!--MEU CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- BIBLIOTECA JQUERY -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- BIBLIOTECA JQUERY UI -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+    <!--MEU JS-->
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<!--JAVA-->
+	<div id="JS">
+		<div id="alerta" hidden="">
+        	<div class="title">Receba Nossas Novidades <i class="fa fa-times" onclick="funcao_bem_louca()"></i></div>
+        	<div class="body">
+            	<form id="novidadesform" name="contact-form" method="POST" >
+            		<label>e-mail:</label>
+            		<input id="email" type="text" name="email" placeholder="digite seu email">
+    	        	<button type="submit">Enviar</button>
+        	    </form>
+        		<div class="resultado"></div>
+        	</div>
+    	</div>
+    	<div id="contador" hidden=""></div>
+    </div>
+
+<!--......................................................-->
+
+
+<!--Menu superrior fixo-->
+	<div id="menu">
+		<div id="nav_bg"></div>
+		<img src="images/logo.png" id="logo">
+		<ul>
+			<li>Membros</li>
+			<li>Blog</li>
+			<li>Categorias</li>
+			<li>Incio</li>
+		</ul>
+	</div>
+<!--......................................................-->
+
+<!--Banner com titulo e butoes-->
+	<div>
+		<div id="banner">
+			<img src="images/banner.jpg">
+		</div>
+		<div id="textos">
+			<ul>
+				<li>APRENDA A<br>DESENVOLVER COM A GTi JR.</li>
+			</ul>
+			<a href="#a1"><button>HTML 5 + CC 3 + JS</button></a>
+			<a href="#a2"><button>Ruby On Rails</button></a>
+		</div>
+	</div>
+<!--......................................................-->
+
+<!--Texto logo abaixo do banner-->
+	<div id="resumo"><a id="a1">
+		<img src="images/pcs.png">
+		<div id="resumo_txt">
+			<h2>MATERIAL TRAINEE 2018</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec lectus felis. Cras dictum lorem nisl, ullamcorper lobortis lorem dictum vel. Ut vehicula libero a libero cursus feugiat. Integer ultrices pellentesque urna ac consectetur. Aliquam nec lacus sed tortor efficitur vehicula sit amet sed leo. Sed sit amet libero leo. Ut blandit lacus eget vestibulum interdum. In eu purus urna. Fusce non rhoncus mauris, in aliquam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras lorem nisl, vulputate eget venenatis ut, aliquam sed diam.</p>
+		</div>
+	</a></div>
+<!--......................................................-->
+
+
+	<hr>
+
+
+<!--Primeira divisao com blocos-->
+	<div id="web">
+		<h2>HTML 5 | CSS 3 | JAVASCRIPT</h2>
+
+   		<div>
+			<div class="blocos">
+				<div class="laranja">
+					<img src="images/html.png" class="img_blocos">
+					<p class="blocos_cont">HTML 5 - Introdução<br>Postado por patrick</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 04/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			HTML é o formato padrão para criação de páginas online e aplicações de web. Em conjunto com o CSS e Javascript, eles formam as pedra principais para a World Wide Web
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="laranja">
+					<img src="images/html.png" class="img_blocos">
+					<p class="blocos_cont">Lista de livros<br>Postado por rayane</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 04/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Lista de livros uteis para o aprendizado de HTML
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="azul">
+					<img src="images/html-css.png" class="img_blocos">
+					<p class="blocos_cont">HTML 5 - Introdução<br>Postado por patrick</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 02/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Aprenda a usar HTML e CSS para criar páginas web. CSS é a linguagem de estilos que você usa para estilizar a página, para instruir os navegadores a alterar a cor, a fonte, o layout e muito mais
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="amarelo">
+					<img src="images/js.png" class="img_blocos" id="js">
+					<p class="blocos_cont">HTML 5 - Introdução<br>Postado por patrick</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 02/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			JavaScript é uma linguagem de programação interpretada, usada para controlar o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.
+        		</span>
+			</div>
+    	</div>
+
+    	<button class="ver">VER +</button>
+    </div>
+<!--......................................................-->
+
+
+	<hr>
+
+
+<!--Primeira divisao com blocos-->
+	<div id="web"><a id="a2">
+		<h2>Ruby On Rails</h2>
+
+   		<div>
+			<div class="blocos">
+				<div class="vermelho">
+					<img src="images/ruby.png" class="img_blocos">
+					<p class="blocos_cont">RUBY - Introdução<br>Postado por Lucas Noleto</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 04/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="vinho">
+					<img src="images/rails.png" class="img_blocos">
+					<p class="blocos_cont">RAILS 5 - Introdução<br>Postado por Patrick</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 04/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Ruby on Rails é um framework livre que promete aumentar velocidade e facilidade no desenvolvimento de sites orientados a banco de dados, uma vez que é possível criar aplicações com base em estruturas pré-definidas
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="roxo">
+					<img src="images/heroku.png" class="img_blocos">
+					<p class="blocos_cont">Fazendo deploy no heroku<br>Postado por Eduardo</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 02/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Heroku é uma plataforma de serviço em nuvem (PaaS) suportando várias linguagens de programação
+        		</span>
+			</div>
+
+			<div class="blocos">
+				<div class="vinho">
+					<img src="images/rails.png" class="img_blocos">
+					<p class="blocos_cont">HTML 5 - Introdução<br>Postado por patrick</p>
+				</div>
+        		<div class="branco">
+        			<p class="postagem">Postado dia 02/08/2017</p>
+        			<button class="b_estudar">ESTUDAR AGORA</button>
+        		</div>
+        		<span class="tooltiptext">
+        			Ruby on Rails é um framework livre que promete aumentar velocidade e facilidade no desenvolvimento de sites orientados a banco de dados, uma vez que é possível criar aplicações com base em estruturas pré-definidas
+        		</span>
+			</div>
+		</div>
+
+		<button class="ver">VER +</button>
+	</a></div>
+
+
+</body>
+</html>
